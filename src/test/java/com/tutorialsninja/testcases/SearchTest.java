@@ -10,6 +10,8 @@ import com.tutorialsninja.base.Base;
 
 public class SearchTest extends Base {
 
+	//updated comments from team member ShailajaKod
+	
 	@BeforeMethod
 	public void setup()
 	{
