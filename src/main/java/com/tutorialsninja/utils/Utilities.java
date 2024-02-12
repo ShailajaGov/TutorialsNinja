@@ -11,8 +11,8 @@ import org.openqa.selenium.io.FileHandler;
 
 public class Utilities {
 	
-	public static final int IMPLICIT_WAIT_TIME=10;
-	public static final int PAGELOAD_WAIT_TIME=15;
+	public static final int IMPLICIT_WAIT_TIME=15;
+	public static final int PAGELOAD_WAIT_TIME=20;
 	
 	public static String getTimeStamp()
 	{
