@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 import com.tutorialsninja.base.Base;
 import com.tutorialsninja.utils.Utilities;
 
+//Register class new comments
 public class RegisterTest extends Base  {
 	
 	//WebDriver driver;
