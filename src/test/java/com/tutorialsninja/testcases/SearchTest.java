@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import com.tutorialsninja.base.Base;
 
 
-//Search test #1
+//Search test #1 new branch
 public class SearchTest extends Base {
 
 	//updated comments from team member ShailajaKod 
