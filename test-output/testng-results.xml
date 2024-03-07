@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-06T13:03:24 PST" name="Default suite" finished-at="2024-03-06T13:03:29 PST" duration-ms="5189">
+  <suite started-at="2024-03-06T23:12:15 PST" name="Default suite" finished-at="2024-03-06T23:13:02 PST" duration-ms="46877">
     <groups>
     </groups>
-    <test started-at="2024-03-06T13:03:24 PST" name="Default test" finished-at="2024-03-06T13:03:29 PST" duration-ms="5189">
-      <class name="sampleseleniumtests.HadlingPopupWindowsAndAlerts">
-        <test-method signature="handleAlertBox()[pri:0, instance:sampleseleniumtests.HadlingPopupWindowsAndAlerts@77847718]" started-at="2024-03-06T13:03:24 PST" name="handleAlertBox" finished-at="2024-03-06T13:03:29 PST" duration-ms="5120" status="PASS">
+    <test started-at="2024-03-06T23:12:15 PST" name="Default test" finished-at="2024-03-06T23:13:02 PST" duration-ms="46877">
+      <class name="sampleseleniumtests.DateAndTimePickerHandling">
+        <test-method signature="selectDateAndTime()[pri:0, instance:sampleseleniumtests.DateAndTimePickerHandling@1623b78d]" started-at="2024-03-06T23:12:15 PST" name="selectDateAndTime" finished-at="2024-03-06T23:13:02 PST" duration-ms="46750" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- handleAlertBox -->
-      </class> <!-- sampleseleniumtests.HadlingPopupWindowsAndAlerts -->
+        </test-method> <!-- selectDateAndTime -->
+      </class> <!-- sampleseleniumtests.DateAndTimePickerHandling -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
