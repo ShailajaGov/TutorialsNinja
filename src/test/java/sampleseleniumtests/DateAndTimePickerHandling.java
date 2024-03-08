@@ -11,6 +11,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -21,6 +23,15 @@ public class DateAndTimePickerHandling {
 @Test
 public void selectDateAndTime() throws InterruptedException
 {
+	ChromeOptions options = new ChromeOptions();
+	options.addArguments("--headless");
+	options.addArguments("--disable-gpu");
+	
+	options.addArguments("--allow-insecure-localhost");
+
+	
+	//options.addAdditionalCapability("acceptInsecureCerts", true, true);
+	
 	WebDriver driver= new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.get("https://demoqa.com/date-picker");
@@ -40,10 +51,15 @@ public void selectDateAndTime() throws InterruptedException
             
 	}
 	
-	 driver.findElement(By.cssSelector("span.react-datepicker__month-read-view--down-arrow")).click();
+		
+	 WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+	 WebElement monthDownArrow = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector("span.react-datepicker__month-read-view--down-arrow"))));//.click();
 	
-	 driver.findElement(By.xpath("//div[text() = 'May']")).click();
-     //Thread.sleep(Duration.ofSeconds(2000));
+	 monthDownArrow.click();
+	 
+	 WebElement month = wait.until(ExpectedConditions.elementToBeClickable( driver.findElement(By.xpath("//div[text() = 'May']"))));
+	 month.click();
+	 //Thread.sleep(Duration.ofSeconds(2000));
      //
      driver.findElement(By.xpath("//*[@aria-label = 'Choose Thursday, May 16th, 2024']")).click();
      driver.findElement(By.xpath("//li[text() = '09:00']")).click();
