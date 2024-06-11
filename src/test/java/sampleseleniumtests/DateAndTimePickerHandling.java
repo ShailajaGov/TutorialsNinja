@@ -73,7 +73,7 @@ public void horizontalSlider() throws AWTException
 	WebDriver driver= new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.get("https://the-internet.herokuapp.com/horizontal_slider");
-	driver.findElement(By.cssSelector("div.sliderContainer>input"));//.click();
+	//driver.findElement(By.cssSelector("div.sliderContainer>input"));//.click();
 	
 	Actions actions= new Actions(driver);
 	actions.moveToElement(driver.findElement(By.cssSelector("div.sliderContainer>input")),0,0)
@@ -111,7 +111,7 @@ public void CloseAd() throws InterruptedException
     click().build().perform();
     
    System.out.println("xyz");
-   
+   Thread.sleep(5000);
    driver.quit();
 	
 
